@@ -1,0 +1,58 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: .5s;
+}
+#toggle{
+    position: relative;
+    appearance: none;
+    height: 7vw;
+    width: 15vw;
+    border-radius: 8vw;
+    box-shadow: -5px -6px 27px -7px rgba(23,23,23,0.75) inset;
+    transition: 0.5s;
+}
+
+#toggle::before{
+    content: "";
+    position: absolute;
+    height: 5vw;
+    width: 5vw;
+    top: 1vw;
+    left: 1vw;
+    border-radius: 50%;
+    background:linear-gradient(to right, #FDC830, #F37335);
+    transition: .5s;
+}
+
+#toggle:checked::before{
+    left: 9vw;
+    background:linear-gradient(to right, #000000, #434343);
+}
+
+#toggle:checked{
+    background-color: #333333;
+    box-shadow: -5px -6px 27px -7px #ffffff inset;
+}
+
+#sunIcon{
+    font-size: 3vw;
+    position: relative;
+    right: 13.2vw;
+    color: #333333;
+}
+
+#moonIcon{
+    font-size: 3vw;
+    position: relative;
+    right: 8vw;
+    color: white;
+}
+#text{
+    margin-top: 4vh;
+    margin-left:40vw;
+    font-size: xx-large;
+  }
+ 
